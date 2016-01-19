@@ -13,4 +13,4 @@ target
 #large files#
 /data
 /tmp
-
+.DS_Store
