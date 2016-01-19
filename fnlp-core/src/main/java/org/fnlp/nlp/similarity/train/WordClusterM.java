@@ -169,6 +169,6 @@ class Multiplesolve implements Runnable {
 		long endtime = System.currentTimeMillis();
 		System.out.println("Total Time:"+(endtime-starttime)/60000);
 		System.out.println("Done");
-		System.exit(0);
+		//System.exit(0);
 	}	
 }

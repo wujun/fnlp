@@ -21,6 +21,7 @@ package org.fnlp.demo.ml;
 
 
 import java.io.File;
+import java.net.URL;
 
 import org.fnlp.data.reader.SimpleFileReader;
 import org.fnlp.ml.classifier.hier.Linear;
@@ -54,10 +55,9 @@ public class HierClassifierUsage2 {
 
 	public static void main(String[] args) throws Exception {
 
-		
 		long start = System.currentTimeMillis();
 
-		path = "./example-data/data-classification.txt";
+		path = "../example-data/data-classification.txt";
 
 		Pipe lpipe = new Target2Label(al);
 		Pipe fpipe = new StringArray2SV(factory, true);
@@ -96,6 +96,6 @@ public class HierClassifierUsage2 {
 		System.out.println("Total Time: " + (end - start));
 		System.out.println("End!");
 		(new File(modelFile)).deleteOnExit();
-		System.exit(0);
+		//System.exit(0);
 	}
 }

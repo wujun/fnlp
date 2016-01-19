@@ -73,6 +73,6 @@ public class TextClassificationSimple {
 		
 		//清除模型文件
 		(new File(modelFile)).deleteOnExit();
-		System.exit(0);
+		//System.exit(0);
 	}
 }

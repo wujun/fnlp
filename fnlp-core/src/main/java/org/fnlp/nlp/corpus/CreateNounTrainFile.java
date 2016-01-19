@@ -55,7 +55,7 @@ public class CreateNounTrainFile {
 					pw.println(sa[0] + "\t" + "E");
 				else {
 					System.out.println("error!");
-					System.exit(1);
+					//System.exit(1);
 				}
 			}
 			else

@@ -142,6 +142,6 @@ public class TextClassificationCustom {
 		System.out.println("类别："+ res);
 		//清除模型文件
 		(new File(modelFile)).deleteOnExit();
-		System.exit(0);
+		//System.exit(0);
 	}
 }
