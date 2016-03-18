@@ -293,7 +293,9 @@ public class EntitiesGetter {
 		if(str.contains("先生")||str.contains("男")||
 				str.contains("丈夫")||str.contains("父")||
 				str.contains("兄")||str.contains("儿子")
-				||str.contains("哥")){
+				||str.contains("哥")||str.contains("弟")
+        ||str.contains("老公")){ 
+      // added by lsj
 			return true;
 		}
 		else

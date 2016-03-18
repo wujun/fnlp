@@ -129,7 +129,7 @@ public class JointParsingState{
 		featurelist.add(combinedFeature("-1+0+1", POS, new int[]{-1, 0, 1}));
 		featurelist.add(combinedFeature("+0+1+2", POS, new int[]{0, 1, 2}));
 		featurelist.add(combinedFeature("+1+2+3", POS, new int[]{1, 2, 3}));
-		featurelist.add(combinedFeature("-2+3+4", POS, new int[]{2, 3, 4}));
+		featurelist.add(combinedFeature("+2+3+4", POS, new int[]{2, 3, 4})); // modified by lsj (-2+3+4 original)
 		featurelist.add(combinedFeature("+0+1", LEX, new int[]{0, 1}));
 		featurelist.add(combinedFeature("-1+0+1", LEX, new int[]{-1, 0, 1}));
 		featurelist.add(combinedFeature("+0+1+2", LEX, new int[]{0, 1, 2}));

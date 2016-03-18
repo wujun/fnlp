@@ -54,8 +54,9 @@ public class DictPOSLabel  extends Pipe{
 				continue;
 			for(String p : pp){
 				if(labels.lookupIndex(p)==-1){
-					System.err.println("Warning: 自定义词性: " +p+ 
-							"\n标签最好在下面列表中：\n" +labels.toString());
+          // modified by lsj
+					//System.err.println("Warning: 自定义词性: " +p+ 
+					//		"\n标签最好在下面列表中：\n" +labels.toString());
 					labels.setStopIncrement(false);
 					labels.lookupIndex(p);
 					labels.setStopIncrement(true);					

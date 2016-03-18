@@ -62,6 +62,10 @@ public class POSTagger extends AbstractTagger {
 	public POSTagger(String cwsmodel, String str) throws LoadModelException {
 		super(str);
 		cws = new CWSTagger(cwsmodel);
+    // Added by lsj 
+    Dictionary dict=new Dictionary();
+		dict.addFile("../models/dict.txt");
+		cws.setDictionary(dict);
 	}
 	
 	/**

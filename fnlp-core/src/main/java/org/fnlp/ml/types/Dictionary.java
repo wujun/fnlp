@@ -161,8 +161,9 @@ public class Dictionary {
 	 * 增加词典信息
 	 * @param word
 	 * @param poses
+   * added synchronized by lsj
 	 */
-	private void addDict(String word, String... poses){
+	private synchronized void addDict(String word, String... poses){
 		if(word.length() > MAX_LEN)
 			MAX_LEN = word.length();
 		if(word.length() < MIN_LEN)
